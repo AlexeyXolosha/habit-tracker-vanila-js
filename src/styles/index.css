@@ -2,6 +2,7 @@
 @import './vars.css';
 
 @import './components/tracker.css';
+@import './components/modal.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -17,4 +18,15 @@ body {
     max-width: calc(1440px + 16px * 2);
     padding-inline: 16px;
     margin-inline: auto;
+}
+
+button,
+.button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+
+    padding: 0;
+    margin: 0;
 }

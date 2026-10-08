@@ -23,7 +23,6 @@
                     </div>
 
                     <ul class="tracker-list">
-                        <li class="tracker-list__item"></li>
                     </ul>
 
                     <div class="trackek-add">
@@ -35,9 +34,31 @@
 
     </main>
 
-    <div class="tracker-modal">
+    <div tracker-modal-add-habbit class="tracker-modal">
         <div class="tracker-modal__wrapper">
-                
+
+            <div class="tracker-modal__head">
+                <button class="button" type="button" title="Закрыть">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-left preview-icon">
+                        <path d="m15 18-6-6 6-6" />
+                    </svg>
+                </button>
+                <div class="tracker-modal__step">ШАГ 1 ИЗ 1</div>
+            </div>
+
+            <div class="tracker-modal__body">
+                <h2 class="tracker-modal__title">Новая привычка</h2>
+                <p class="tracker-modal__intro">Начни с небольшого действия — регулярность важнее идеала.</p>
+
+                <form tracker-modal-add-habbit-form>
+                    <div class="tracker-modal__group">
+
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
 

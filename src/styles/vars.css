@@ -1,0 +1,30 @@
+:root {
+  --ink: #17251f;
+  --muted: #84918a;
+  --paper: #f7f8f4;
+  --white: #fff;
+  --green: #b9ef78;
+  --green-check: #8ed74e;
+  --green-check-ink: #20382d;
+  --dark: #20382d;
+  --dark-accent: #2d4c3c;
+  --dark-soft: #355242;
+  --text-on-dark: #fff;
+  --text-on-dark-soft: #c5d1ca;
+  --text-on-dark-muted: #c3cec7;
+  --text-on-dark-dot: #d8e0db;
+  --avatar-bg: #eadbc7;
+  --card-border: #eef0ec;
+  --check-border: #dce3dc;
+  --check-border-muted: #cbd5cc;
+  --check-muted: #718078;
+  --button-text: #4e6958;
+  --nav-muted: #9aa59e;
+  --nav-active: #264333;
+  --nav-active-accent: #70b93d;
+  --nav-bg: rgba(255, 255, 255, 0.94);
+  --emoji-water: #fff0d9;
+  --emoji-reading: #e8f1ff;
+  --emoji-stretch: #f4eaff;
+  --emoji-walk: #e5f6eb;
+}

@@ -1,4 +1,5 @@
 // TODO работа с фокусом. 
+
 let activeModal = null;
 let isInitialized = false;
 const OPEN_CLASS = 'expanded'

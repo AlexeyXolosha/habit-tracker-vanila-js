@@ -78,8 +78,9 @@
 }
 
 .tracker-modal__intro {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: var(--muted);
+    margin-bottom: 24px;
 }

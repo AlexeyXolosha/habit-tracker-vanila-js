@@ -11,17 +11,29 @@
     height: 100%;
 
     background-color: var(--paper);
+    visibility: hidden;
+    opacity: 0;
 
-    transition: .3s ease;
+    transition: all .3s ease;
+}
+
+.tracker-modal.expanded {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tracker-modal.expanded .tracker-modal__wrapper {
+    transform: translateY(0);
 }
 
 .tracker-modal__wrapper {
     overflow: auto;
     width: 100%;
     height: 100%;
-    transition: .3s ease;
+    transform: translateY(200px);
 
     padding: 36px 24px;
+    transition: all .3s ease;
 }
 
 .tracker-modal__head {
@@ -32,7 +44,7 @@
     margin-bottom: 24px;
 }
 
-.tracker-modal__head .button {
+.tracker-modal__head .tracker-modal__close {
     justify-content: center;
 
     background-color: var(--white);

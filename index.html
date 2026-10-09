@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -25,8 +25,9 @@
                     <ul class="tracker-list">
                     </ul>
 
-                    <div class="trackek-add">
-                        <button>＋ Добавить привычку</button>
+                    <div class="tracker-add">
+                        <button data-open-modal="add-habit" type="button" aria-label="Добавить привычку">＋ Добавить
+                            привычку</button>
                     </div>
                 </div>
             </div>
@@ -34,14 +35,14 @@
 
     </main>
 
-    <div tracker-modal-add-habbit class="tracker-modal">
+    <div role="dialog" aria-modal="true" aria-labelledby="add-habit-title" data-modal="add-habit" class="tracker-modal">
         <div class="tracker-modal__wrapper">
 
             <div class="tracker-modal__head">
-                <button class="button" type="button" title="Закрыть">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-chevron-left preview-icon">
+                <button data-close-modal class="button tracker-modal__close" type="button" aria-label="Закрыть">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-chevron-left preview-icon">
                         <path d="m15 18-6-6 6-6" />
                     </svg>
                 </button>
@@ -49,10 +50,10 @@
             </div>
 
             <div class="tracker-modal__body">
-                <h2 class="tracker-modal__title">Новая привычка</h2>
+                <h2 id="add-habit-title" class="tracker-modal__title">Новая привычка</h2>
                 <p class="tracker-modal__intro">Начни с небольшого действия — регулярность важнее идеала.</p>
 
-                <form tracker-modal-add-habbit-form>
+                <form>
                     <div class="tracker-modal__group">
 
                     </div>
@@ -63,5 +64,10 @@
     </div>
 
 </body>
+
+<script type="module">
+    import { initModal } from './src/js/components/modal.js';
+    initModal()
+</script>
 
 </html>
